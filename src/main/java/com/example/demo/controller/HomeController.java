@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     @GetMapping("/")
-    public void index(){
+    public String index(){
         //TESTaaaaaaaaa
         log.info("HELLOWORLD");
+        return "index";
     }
+
+
 }
